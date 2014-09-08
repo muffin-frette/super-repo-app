@@ -12,7 +12,7 @@ using System.Runtime.Serialization;
 using Definitions;
 using Sondage;
 
-namespace WtfService
+namespace WcfService
 {
     // Start the service and browse to http://<machine_name>:<port>/Service1/help to view the service's generated help page
     // NOTE: By default, a new instance of the service is created for each call; change the InstanceContextMode to Single if you want
@@ -21,9 +21,9 @@ namespace WtfService
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 
-    public class WtfSvc
+    public class WcfSvc
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(WtfSvc));
+        private static readonly ILog log = LogManager.GetLogger(typeof(WcfSvc));
 
         /// <summary>
         /// Obtenirs the sondages.
@@ -32,6 +32,7 @@ namespace WtfService
         [WebGet(UriTemplate = "GetAvailablePolls")]
         public IList<Poll> GetAvailablePolls()
         {
+            log.Info("GetAvailablePolls");
             return SimpleSondageDAO.Instance.GetAvailablePolls();
         }
 
@@ -45,6 +46,7 @@ namespace WtfService
         [WebGet(UriTemplate = "GetNextQuestion/{pollID}/{currentQuestionID}")]
         public PollQuestion GetNextQuestion(string pollID, string currentQuestionID)
         {
+            log.Info("GetNextQuestion");
             int ipollID = -1, icurrentQuestionID = -1;
             if (Int32.TryParse(currentQuestionID, out  icurrentQuestionID) &&
                 Int32.TryParse(pollID, out  ipollID))
@@ -64,6 +66,7 @@ namespace WtfService
         [WebGet(UriTemplate = "SaveAnswer/{userID}/{pollID}/{questionID}/{text}")]
         public void SaveAnswer(string userID, string pollID, string questionID, string text)
         {
+            log.Info("SaveAnswer");
             int iuserID = -1, ipollID = -1 , iquestionID = -1;
             if (Int32.TryParse(userID, out  iuserID) && 
                 Int32.TryParse(pollID, out  ipollID) &&
