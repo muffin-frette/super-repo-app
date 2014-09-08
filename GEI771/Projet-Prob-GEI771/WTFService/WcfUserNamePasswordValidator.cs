@@ -6,15 +6,15 @@ using System.IdentityModel.Selectors;
 using System.ServiceModel;
 using log4net;
 
-namespace WtfService
+namespace WcfService
 {
 
     /// <summary>
     /// Here is where we actually validate the password
     /// </summary>
-    class WtfUserNamePasswordValidator : UserNamePasswordValidator
+    class WcfUserNamePasswordValidator : UserNamePasswordValidator
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(WtfUserNamePasswordValidator));
+        private static readonly ILog log = LogManager.GetLogger(typeof(WcfUserNamePasswordValidator));
 
         public override void Validate(string userID, string password)
         {

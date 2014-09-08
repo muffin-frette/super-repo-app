@@ -1,8 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WtfService", "WTFService\WtfService.csproj", "{607A9865-E717-478E-ABFD-D7A1663D821E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "WTFService\WcfService.csproj", "{607A9865-E717-478E-ABFD-D7A1663D821E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WtfConsole", "WtfConsole\WtfConsole.csproj", "{E796D3D4-6D14-4324-A818-5628A597B398}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfConsole", "WtfConsole\WcfConsole.csproj", "{E796D3D4-6D14-4324-A818-5628A597B398}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{4366C34B-4C86-49BF-91B5-A8E1DE51FC8E}"
 EndProject

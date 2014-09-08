@@ -6,7 +6,7 @@ using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Reflection;
 using System.IO;
-using WtfService;
+using WcfService;
 using System.Web.Routing;
 using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
@@ -17,9 +17,9 @@ namespace WtfConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var host = new ServiceHost(typeof(WtfSvc));
+            var host = new ServiceHost(typeof(WcfSvc));
             host.Open();
 
             Console.WriteLine("The service is ready at {0}", host.Description.Endpoints[0].ListenUri);

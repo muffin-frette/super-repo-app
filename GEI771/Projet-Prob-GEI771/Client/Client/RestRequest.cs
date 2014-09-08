@@ -35,9 +35,17 @@ namespace Client
                         return response.Content;
                     }
                 }
-                catch (Exception ex)
+                catch (HttpRequestException)
+                {
+                    throw;
+                }
+                catch (AggregateException ex)
                 {
                     Console.WriteLine(ex.InnerException.InnerException.Message + "\n");
+                }
+                catch (WebException)
+                {
+                    throw;
                 }
             }
             return null;
