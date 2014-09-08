@@ -31,9 +31,7 @@ namespace Client
                 {
                     var response = client.GetAsync(url).Result;
                     if (response.IsSuccessStatusCode)
-                    {
                         return response.Content;
-                    }
                 }
                 catch (HttpRequestException)
                 {
