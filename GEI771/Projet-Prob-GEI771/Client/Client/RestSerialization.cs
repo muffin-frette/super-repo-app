@@ -34,7 +34,7 @@ namespace Client
                 userID,
                 password,
                 serverString,
-                "WtfService/SaveAnswer/" +
+                "WcfService/SaveAnswer/" +
                 Int32.Parse(userID, new CultureInfo("fr-FR")) + "/" +
                 question.PollId + "/" +
                 question.QuestionId + "/" +
@@ -57,7 +57,7 @@ namespace Client
                 userID, 
                 password, 
                 serverString, 
-                "WtfService/GetNextQuestion/" + pollId + "/" + currentQuestionId
+                "WcfService/GetNextQuestion/" + pollId + "/" + currentQuestionId
             );
             if (content == null)
              return null;
@@ -79,7 +79,7 @@ namespace Client
         /// <returns></returns>
         public static IList<Poll> GetAvailablePolls(string userID, string password,string serverString)
         {
-            HttpContent content = RestRequest.GetRestConnection(userID,password,serverString, "WtfService/GetAvailablePolls");
+            HttpContent content = RestRequest.GetRestConnection(userID,password,serverString, "WcfService/GetAvailablePolls");
             if (content == null)
                 return null;
 
