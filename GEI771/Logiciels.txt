@@ -1,2 +1,9 @@
+Code
 FxCore
 ApplicationVerifier
+EazFuscator
+
+Test
+AttackSurfaceAnalyser
+MiniFuzz
+RegexFuzzer
