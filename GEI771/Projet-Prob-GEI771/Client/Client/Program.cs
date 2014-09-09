@@ -87,7 +87,6 @@ namespace Client
         {
             ShowStringConsole.AuthentificationMenu();
             userID = Console.ReadLine();
-
             int iUserID = 0;
             if (!Int32.TryParse(userID, out iUserID))
             {
