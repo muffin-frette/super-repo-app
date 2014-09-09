@@ -1,6 +1,7 @@
 Code
 FxCore
-ApplicationVerifier
+ApplicationVerifier C++
+BinScope Binary
 EazFuscator
 
 Test

@@ -26,7 +26,7 @@ namespace Client
             Console.WriteLine("***********************************************************");
             Console.WriteLine("Choisir une des options ci-dessous");
             Console.WriteLine("1: Afficher les sondages disponibles");
-            Console.WriteLine("2: Répondre à un sondage");
+            Console.WriteLine("2: Repondre à un sondage");
             Console.WriteLine("Escape : Pour quitter l'application");
             Console.WriteLine("***********************************************************");
         }
@@ -36,7 +36,7 @@ namespace Client
         /// </summary>
         public static void PollMenu()
         {
-            Console.WriteLine("Insérer le numéro de sondage que vous voulez répondre");
+            Console.WriteLine("Inserer le numero de sondage que vous voulez repondre");
         }
 
         /// <summary>
@@ -44,8 +44,8 @@ namespace Client
         /// </summary>
         public static void AnswerPollMenu()
         {
-            Console.WriteLine("Réponse de l'utilisateur");
-            Console.WriteLine("Inscrire votre réponse");
+            Console.WriteLine("Reponse de l'utilisateur");
+            Console.WriteLine("Inscrire votre reponse");
         }
 
         /// <summary>
@@ -61,8 +61,8 @@ namespace Client
         /// </summary>
         public static void AuthentificationMenu()
         {
-            Console.WriteLine("Entrer les informations nécessaires pour votre authentification");
-            Console.WriteLine("Votre numéro d'usager (seulement des chiffres)");
+            Console.WriteLine("Entrer les informations necessaires pour votre authentification");
+            Console.WriteLine("Votre numero d'usager (seulement des chiffres)");
         }
 
         /// <summary>
@@ -78,7 +78,7 @@ namespace Client
         /// </summary>
         public static void InvalidUsername()
         {
-            Console.WriteLine("Votre userID ne respecte pas le format numérique");
+            Console.WriteLine("Votre userID ne respecte pas le format numerique");
         }
 
         /// <summary>

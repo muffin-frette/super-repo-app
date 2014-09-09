@@ -1,3 +1,4 @@
 Analyse code Visual Studio
 FxCore
+BinScope Binary
 MiniFuzz
