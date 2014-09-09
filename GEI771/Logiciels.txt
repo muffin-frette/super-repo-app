@@ -1,5 +1,5 @@
 Code
-FxCore
+FxCop
 ApplicationVerifier C++
 BinScope Binary
 EazFuscator
