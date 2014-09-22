@@ -133,17 +133,9 @@ namespace SansSoussi.Controllers
         {            
             List<string> searchResults = new List<string>();
 
-            HttpCookie cookie = HttpContext.Request.Cookies["username"];
-            
-            List<string> cookieString = new List<string>();
+            MembershipUser user = Membership.Provider.GetUser(HttpContext.User.Identity.Name, true);
 
-            //Decode the cookie from base64 encoding
-            //TODO DECRYPT HERE
-            byte[] encodedDataAsBytes = System.Convert.FromBase64String(cookie.Value);
-            string strCookieValue = System.Text.ASCIIEncoding.ASCII.GetString(encodedDataAsBytes);
-
-            //get user role base on cookie value
-            string[] roles = Roles.GetRolesForUser(strCookieValue);
+            string[] roles = Roles.GetRolesForUser(user.UserName);
 
             bool isAdmin = roles.Contains("admin");
 

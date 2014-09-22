@@ -25,12 +25,23 @@ namespace SansSoussi.Controllers
             base.Initialize(requestContext);
         }
 
+        private void RedirectToHttps()
+        {
+            if (HttpContext.Request.Url.Scheme != Uri.UriSchemeHttps)
+            {
+                string redirectUrl = Request.Url.ToString().Replace("http:", "https:");
+                redirectUrl = redirectUrl.Replace("1033", "44300");
+                Response.Redirect(redirectUrl, false);
+            }
+        }
+
         // **************************************
         // URL: /Account/LogOn
         // **************************************
 
         public ActionResult LogOn()
         {
+            RedirectToHttps();
             return View();
         }
 
@@ -48,7 +59,6 @@ namespace SansSoussi.Controllers
                     }
                     else
                     {
-                        HttpContext.Response.Cookies.Add(GetAuthentificationCookie(model.UserName));
                         return RedirectToAction("Index", "Home");
                     }
                 }
@@ -79,6 +89,7 @@ namespace SansSoussi.Controllers
 
         public ActionResult Register()
         {
+            RedirectToHttps();
             ViewBag.PasswordLength = MembershipService.MinPasswordLength;
             return View();
         }
@@ -95,7 +106,6 @@ namespace SansSoussi.Controllers
                 {
                     FormsService.SignIn(model.UserName, false /* createPersistentCookie */);
 
-                    HttpContext.Response.Cookies.Add(GetAuthentificationCookie(model.UserName));
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -148,21 +158,6 @@ namespace SansSoussi.Controllers
         public ActionResult ChangePasswordSuccess()
         {
             return View();
-        }
-
-        // **************************************
-        // Helper Methods
-        // **************************************
-        private HttpCookie GetAuthentificationCookie(String username)
-        {
-            //TODO Encryption here!
-            //Encode the username in base64
-            byte[] toEncodeAsBytes = System.Text.ASCIIEncoding.ASCII.GetBytes(username);
-
-            HttpCookie authCookie = new HttpCookie("username", System.Convert.ToBase64String(toEncodeAsBytes));
-            authCookie.HttpOnly = true;
-            //authCookie.Expires = DateTime.Now + TimeSpan.FromDays(7);
-            return authCookie;
         }
     }
 }
