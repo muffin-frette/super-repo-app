@@ -126,6 +126,7 @@ namespace SansSoussi.Controllers
         [Authorize]
         public ActionResult ChangePassword()
         {
+            RedirectToHttps();
             ViewBag.PasswordLength = MembershipService.MinPasswordLength;
             return View();
         }
@@ -157,6 +158,7 @@ namespace SansSoussi.Controllers
 
         public ActionResult ChangePasswordSuccess()
         {
+            RedirectToHttps();
             return View();
         }
     }

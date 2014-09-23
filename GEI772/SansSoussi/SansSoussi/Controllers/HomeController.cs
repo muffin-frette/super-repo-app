@@ -106,7 +106,7 @@ namespace SansSoussi.Controllers
                     using (SqlCommand command = new SqlCommand(strCmdSelectSearchComment, connection))
                     {
                         command.Parameters.AddWithValue("@UserId", user.ProviderUserKey);
-                        command.Parameters.AddWithValue("@SearchData", "%" + searchData +"%");
+                        command.Parameters.AddWithValue("@SearchData", "%" + EscapeSqlLike(searchData) + "%");
                         connection.Open();
                         using (SqlDataReader rd = command.ExecuteReader())
                         {
@@ -163,6 +163,11 @@ namespace SansSoussi.Controllers
         public ActionResult About()
         {
             return View();
+        }
+
+        private String EscapeSqlLike(String input)
+        {
+            return input.Replace("[", "[[]").Replace("%", "[%]").Replace("_", "[_]");
         }
     }
 }
