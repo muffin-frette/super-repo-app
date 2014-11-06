@@ -1,3 +1,0 @@
-Analyse code Visual Studio
-FxCop
-BinScope Binary
