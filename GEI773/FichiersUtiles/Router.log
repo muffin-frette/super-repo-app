@@ -65,7 +65,7 @@ Oct 29 21:17:10 UTC: %ISDN-6-CONNECT: Interface BRI0/0:1 is now connected to 441
 Oct 29 21:17:11 UTC: %ISDN-6-DISCONNECT: Interface BRI0/0:1  disconnected from 441732458976 , call lasted 1 seconds
 Oct 29 21:17:11 UTC: %LINK-3-UPDOWN: Interface BRI0/0:1, changed state to down
 Oct 29 21:17:14 UTC: %ISDN-6-LAYER2DOWN: Layer 2 for Interface BR0/0, TEI 86 changed to down
-.Oct 29 21:21:16 UTC: %ISDN-6-LAYER2UP: Layer 2 for Interface BR0/0, TEI 86 changed to up
+Oct 29 21:21:16 UTC: %ISDN-6-LAYER2UP: Layer 2 for Interface BR0/0, TEI 86 changed to up
 Oct 30 21:31:15 UTC: %LINK-3-UPDOWN: Interface BRI0/0:1, changed state to up
 Oct 30 21:31:16 UTC: %ISDN-6-DISCONNECT: Interface BRI0/0:1  disconnected from 441732458976 , call lasted 1 seconds
 Oct 30 21:31:16 UTC: %LINK-3-UPDOWN: Interface BRI0/0:1, changed state to down
@@ -95,30 +95,49 @@ Nov  1 22:01:18 UTC: %ISDN-6-LAYER2UP: Layer 2 for Interface BR0/0, TEI 86 chang
 Nov  2 14:15:26 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(44175) -> 0.0.0.0(80), 1 packet
 Nov  2 15:01:25 UTC: %LINK-3-UPDOWN: Interface BRI0/0:1, changed state to up
 Nov  2 15:01:25 UTC: %ISDN-6-CONNECT: Interface BRI0/0:1 is now connected to 441732458976 
-Nov  2 15:01:26 UTC: %ISDN-6-DISCONNECT: Interface BRI0/0:1  disconnected from 441732458976 , call lasted 1 seconds
-Nov  2 15:01:26 UTC: %LINK-3-UPDOWN: Interface BRI0/0:1, changed state to down
-Nov  2 15:01:28 UTC: %ISDN-6-LAYER2DOWN: Layer 2 for Interface BR0/0, TEI 86 changed to down
+Nov  2 15:01:28 UTC: %ISDN-6-DISCONNECT: Interface BRI0/0:1  disconnected from 441732458976 , call lasted 1 seconds
+Nov  2 15:01:31 UTC: %LINK-3-UPDOWN: Interface BRI0/0:1, changed state to down
+Nov  2 15:01:45 UTC: %ISDN-6-LAYER2DOWN: Layer 2 for Interface BR0/0, TEI 86 changed to down
 Nov  2 15:21:19 UTC: %ISDN-6-LAYER2UP: Layer 2 for Interface BR0/0, TEI 86 changed to up
-Nov  2 15:30:36 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(45034) -> 0.0.0.0(80), 1 packet
-Nov  2 15:36:32 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(45034) -> 0.0.0.0(80), 1 packet
-Nov  2 16:07:57 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(45440) -> 0.0.0.0(80), 1 packet
-Nov  2 16:13:35 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(45440) -> 0.0.0.0(80), 1 packet
-Nov  3 08:47:12 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(54739) -> 0.0.0.0(80), 1 packet
-Nov  3 08:52:53 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(54739) -> 0.0.0.0(80), 1 packet
-Nov  3 09:14:49 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(55016) -> 0.0.0.0(80), 1 packet
-Nov  3 09:19:54 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(55016) -> 0.0.0.0(80), 1 packet
-Nov  3 12:07:15 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(56839) -> 0.0.0.0(80), 1 packet
-Nov  3 12:07:19 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 172.16.1.72(5775) -> 0.0.0.0(80), 1 packet  
-Nov  3 12:07:28 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 172.16.1.14(11995) -> 0.0.0.0(80), 1 packet  
-Nov  3 12:08:15 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 172.16.1.14(7331) -> 0.0.0.0(80), 1 packet  
-Nov  3 12:09:15 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 172.16.1.49(36426) -> 0.0.0.0(80), 1 packet  
-Nov  3 12:09:45 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted udp 173.194.43.87(55555) -> 0.0.0.0(80), 32927 packets
-Nov  3 00:01:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 118.110.102.238(4343) -> 0.0.0.0(80), 1081 packets
-Nov  3 00:01:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 61.213.92.15(5465) -> 0.0.0.0(80), 1489 packets
-Nov  3 00:01:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 210.139.95.55(43543) -> 0.0.0.0(80), 23296 packets
-Nov  3 00:02:51 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 123.219.198.68(45435) -> 0.0.0.0(80), 1 packet
-Nov  3 00:03:11 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 125.193.116.110(54354) -> 0.0.0.0(80), 1 packet
-Nov  3 00:03:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 101.142.156.181(54354) -> 0.0.0.0(80), 8561 packets
-Nov  3 00:04:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 124.100.109.64(56465) -> 0.0.0.0(80), 23364 packets
-Nov  3 00:04:23 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 114.163.178.111(32322) -> 0.0.0.0(80), 1 packet
-Nov  3 00:04:29 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 114.164.208.101(32122) -> 0.0.0.0(80), 1 packet
+Nov  3 15:30:36 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 14.46.240.66(45034) -> 0.0.0.0(80), 14 packet
+Nov  3 15:36:32 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 145.46.240.25(45234) -> 0.0.0.0(80), 431 packet
+Nov  3 16:07:57 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 65.12.240.12(45410) -> 0.0.0.0(80), 5653 packet
+Nov  3 16:13:35 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 76.43.23.4(45340) -> 0.0.0.0(80), 5234 packet
+Nov  3 08:47:12 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 191.46.76.54(54739) -> 0.0.0.0(80), 6532 packet
+Nov  5 08:52:53 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 18.46.3.43(54739) -> 0.0.0.0(80), 5766 packet
+Nov  5 09:14:49 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(55016) -> 0.0.0.0(80), 3432 packet
+Nov  5 09:19:54 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 69.49.240.66(55016) -> 0.0.0.0(80), 1332 packet
+Nov  5 12:24:15 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 65.55.90.144(56839) -> 0.0.0.0(80), 4353 packet 
+Nov  5 12:38:43 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 65.55.90.144(56839) -> 0.0.0.0(80), 5113 packet
+Nov  5 12:38:58 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 142.213.165.80(56839) -> 0.0.0.0(80), 5322 packet
+
+Nov  6 12:40:19 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(10), 1 packet  
+Nov  6 12:40:19 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(11), 1 packet 
+Nov  6 12:40:19 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(12), 1 packet 
+Nov  6 12:40:19 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(13), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(14), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(15), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(16), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(17), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(18), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(19), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(20), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(21), 1 packet 
+Nov  6 12:40:20 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(22), 1 packet  
+Nov  6 12:40:21 UTC: %SEC-6-IPACCESSLOGP: list 160 denied tcp 142.213.165.80(11995) -> 0.0.0.0(23), 1 packet  
+
+Nov  6 12:54:45 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted udp 173.194.43.87(55555) -> 0.0.0.0(80), 32927 packets
+Nov  6 00:01:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 118.110.102.238(4343) -> 0.0.0.0(80), 1081 packets
+Nov  6 00:01:14 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 61.213.92.15(5465) -> 0.0.0.0(80), 1489 packets
+Nov  6 00:01:28 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 210.139.95.55(43543) -> 0.0.0.0(80), 23296 packets
+Nov  6 00:02:51 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 123.219.198.68(45435) -> 0.0.0.0(80), 543 packet
+Nov  6 00:03:11 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 125.193.116.110(54354) -> 0.0.0.0(80), 5466 packet
+Nov  6 00:03:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 101.142.156.181(54354) -> 0.0.0.0(80), 8561 packets
+Nov  6 00:04:18 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 124.100.109.64(56465) -> 0.0.0.0(80), 23364 packets
+Nov  6 00:04:23 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 114.163.178.111(32322) -> 0.0.0.0(80), 5431 packet
+Nov  6 00:04:29 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 114.164.208.101(32122) -> 0.0.0.0(80), 3454 packet
+
+Nov  6 12:07:15 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(56839) -> 0.0.0.0(80), 5432 packet 
+Nov  6 12:07:15 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(56839) -> 0.0.0.0(80), 1541 packet 
+Nov  6 12:07:15 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(56839) -> 0.0.0.0(80), 3253 packet 
+Nov  6 12:07:15 UTC: %SEC-6-IPACCESSLOGP: list 160 permitted tcp 19.46.240.66(56839) -> 0.0.0.0(80), 5423 packet 

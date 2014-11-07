@@ -1,5 +1,4 @@
-eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MYEVENTSOURCE /D "Mozilla Firefox: Désinstallation avast "
-eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MYEVENTSOURCE /D "Mozilla Firefox: Suppression de cookies"
-eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MYEVENTSOURCE /D "Mozilla Firefox: Suppression de connexions actives"
-eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MYEVENTSOURCE /D "Mozilla Firefox: Suppression de l'historique navigation et des téléchargements"
+eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MOZILLA-EVENT /D "Mozilla Firefox: cookies suppression"
+eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MOZILLA-EVENT /D "Mozilla Firefox: actives connections suppression"
+eventcreate /ID 1 /L APPLICATION /T INFORMATION  /SO MOZILLA-EVENT /D "Mozilla Firefox: historical suppression "
 
